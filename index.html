@@ -16,6 +16,7 @@
     <script src="./assets/js/jquery-1.12.1.js"></script>
     <script src="./assets/js/swiper.min.js"></script>
     <script src="./assets/js/scrollBar.js"></script>
+    <script src="./assets/js/wow.min.js"></script>
     <script src="./assets/js/bootstrap.min.js"></script>
   </head>
 
@@ -482,60 +483,231 @@
       </div>
     </nav>
 
-    <!-- Swiper -->
-    <div class="banner">
-      <div class="swiper-container banner-index">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide" style="width: 1920px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;">
-            <a href="#">    
-              <div class="slidebg"  style="background-image: url(./assets/image/index/bannerbg1.jpg)">
-                <!-- <img src="./assets/image/index/bannerbg1.jpg"> -->
-                    
-                <div class="bgtext">
-                  <img src="./assets/image/index/banner_txt1.png">
-                </div>  
-                
-              </div> 
-              <video class="videos" autoplay="autoplay" loop="loop" controls muted src="./assets/image/index/bannerbg1.mp4">
-              </video>
-
-            </a>
-          </div>
-          <div class="swiper-slide" style="width: 1920px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;">
-            <a href="#">    
-              <div class="slidebg"  style="background-image: url(./assets/image/index/banner4_bg_ch.jpg)">
-                <!-- <img src="./assets/image/index/bannerbg1.jpg"> -->
-                    
-                <div class="bgtext">
-                  <!-- <img src="./assets/image/index/banner4_bg_ch.jpg"> -->
-                </div>  
-              </div>
-              <div class="videos">
-                <video class="" autoplay="autoplay" loop="loop" controls="controls" muted src="./assets/image/index/bannerbg3.mp4">
+<!-- Swiper -->
+  <div class="banner">
+    <div class="swiper-container banner-index">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <a href="#">    
+            <div class="slidebg"  style="background-image: url(./assets/image/index/bannerbg1.jpg)">
+              <!-- <img src="./assets/image/index/bannerbg1.jpg"> -->
+                  
+              <div class="bgtext">
+                <img src="./assets/image/index/banner_txt1.png">
+              </div>  
+              
+            </div> 
+            <div class="videos">
+                <video class="" autoplay="autoplay" loop="loop" controls="controls" muted src="./assets/image/index/bannerbg1.mp4">
                 </video>
               </div>
-            </a>
-          </div>
-          <!-- <div class="swiper-slide">
-            <img src="./assets/image/index/bannerbg1.jpg">
-          </div> -->
-          <!-- <div class="swiper-slide">Slide 2</div>
-          <div class="swiper-slide">Slide 3</div>
-          <div class="swiper-slide">Slide 4</div>
-          <div class="swiper-slide">Slide 5</div>
-          <div class="swiper-slide">Slide 6</div>
-          <div class="swiper-slide">Slide 7</div>
-          <div class="swiper-slide">Slide 8</div>
-          <div class="swiper-slide">Slide 9</div>
-          <div class="swiper-slide">Slide 10</div> -->
+            <!-- <video class="videos" autoplay="autoplay" loop="loop" controls muted src="./assets/image/index/bannerbg1.mp4">
+            </video> -->
+
+          </a>
         </div>
-        <!-- Add Pagination -->
-        <div class="swiper-pagination"></div>
-        <!-- Add Arrows -->
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
+        <div class="swiper-slide">
+          <a href="#">    
+            <div class="slidebg"  style="background-image: url(./assets/image/index/banner4_bg_ch.jpg)">
+              <!-- <img src="./assets/image/index/bannerbg1.jpg"> -->
+                  
+              <div class="bgtext">
+                <!-- <img src="./assets/image/index/banner4_bg_ch.jpg"> -->
+              </div>  
+            </div>
+            <div class="videos">
+              <video class="" autoplay="autoplay" loop="loop" controls="controls" muted src="./assets/image/index/bannerbg2_bg_ch.jpg">
+              </video>
+            </div>
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#">    
+            <div class="slidebg"  style="background-image: url(./assets/image/index/banner2_bg_ch.jpg)">
+              <!-- <img src="./assets/image/index/bannerbg1.jpg"> -->
+                  
+              <div class="bgtext">
+                <!-- <img src="./assets/image/index/banner4_bg_ch.jpg"> -->
+              </div>  
+            </div>
+            <div class="videos">
+              <video class="" autoplay="autoplay" loop="loop" controls="controls" muted src="./assets/image/index/bannerbg3.mp4">
+              </video>
+            </div>
+          </a>
+        </div>
+        <!-- <div class="swiper-slide">
+          <img src="./assets/image/index/bannerbg1.jpg">
+        </div> -->
+        <!-- <div class="swiper-slide">Slide 2</div>
+        <div class="swiper-slide">Slide 3</div>
+        <div class="swiper-slide">Slide 4</div>
+        <div class="swiper-slide">Slide 5</div>
+        <div class="swiper-slide">Slide 6</div>
+        <div class="swiper-slide">Slide 7</div>
+        <div class="swiper-slide">Slide 8</div>
+        <div class="swiper-slide">Slide 9</div>
+        <div class="swiper-slide">Slide 10</div> -->
+      </div>
+      <!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
+      <!-- Add Arrows -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+  </div>
+
+<!-- AI -->
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+      <div class="ai">
+          <h1>坚持原创 , 让AI引领人类进步</h1>
+          <h3>致力于研发创新人工智能技术，为经济、社会和人类发展做出积极的贡献。</h3>  
+          <a href="#">
+            了解更多
+            <span></span>
+          </a>  
       </div>
     </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+      <div class="ailist">
+        <div class="list1">
+          <div>
+            <img class="img-responsive" src="./assets/image/index/index_block1.jpg">
+            <p>成长之路</p>
+            <div>
+              <a href="#">了解更多<span></span></a>
+            </div>
+          </div>
+          <div>
+            <li>
+              <a href="#"><div class="list_title">商汤科技创始人汤晓鸥获马来西亚总理亲自任命，担任国家主权基金第一位外籍董事</div></a>
+              <div class="index_block_data">2019-07-01</div>
+            </li>
+            <li>
+              <a href="#"><div class="list_title">大爱[AI]无疆  让人工智能从基础改变世界</div></a>
+              <div class="index_block_data">2019-05-15</div>
+            </li>
+          </div>
+        </div>
+        
+        <div class="list1">
+          <div>
+            <img class="img-responsive" src="./assets/image/index/index_block2.jpg">
+            <p>前沿探索</p>
+            <div>
+              <a href="#">了解更多<span></span></a>
+            </div>
+          </div>
+          <div>
+            <li>
+              <a href="#"><div class="list_title">深化AI人才战略部署 商汤科技博士后工作站正式挂牌成立</div></a>
+              <div class="index_block_data">2018-09-13</div>
+            </li>
+            <li>
+              <a href="#"><div class="list_title">商汤及联合实验室37篇论文入选ECCV 2018，识别、检测与场景分析等技术获关键突破</div></a>
+              <div class="index_block_data">2018-09-08</div>
+            </li>
+          </div>
+        </div>
+
+        <div class="list1">
+          <div>
+            <img class="img-responsive" src="./assets/image/index/index_block3.jpg">
+            <p>行业赋能</p>
+            <div>
+              <a href="#">了解更多<span></span></a>
+            </div>
+          </div>
+          <div>
+            <li>
+              <a href="#"><div class="list_title">AI+AR赋能游戏新玩法  商汤科技“笑傲”ChinaJoy</div></a>
+              <div class="index_block_data">2019-08-02</div>
+            </li>
+            <li>
+              <a href="#"><div class="list_title">换个视角看世界，商汤科技发布SenseEarth智能遥感影像解译平台</div></a>
+              <div class="index_block_data">2019-07-09</div>
+            </li>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Area -->
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+      <div class="ai">
+          <h1>业务领域</h1>
+          <h3>原创技术成就业务及服务</h3>  
+      </div>
+    </div>
+  </div>
+
+  <div class="width-1220 index-cp">
+		<div id="index-cp" class="wow fadeInUp swiper-container-horizontal swiper-container-free-mode swiper-container-android" style="visibility: visible; animation-name: fadeInUp;">
+			<div class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px);">
+				<div class="swiper-slide index-1 m-active swiper-slide-active" style="width: 140.25px;">
+					<div class="index-1-icon">
+						<img src="./assets/image/index/5c740033bcf52.png">
+						<span><img src="./assets/image/index/5c740033bcf52.png"></span>
+					</div>
+					<p>智慧城市</p>
+				</div><div class="swiper-slide index-1">
+					<div class="index-1-icon">
+						<img src="./assets/image/index/5bf4bb278e69c.png">
+						<span><img src="./assets/image/index/5bf4bb233c2d5.png"></span>
+					</div>
+					<p>智能手机</p>
+				</div><div class="swiper-slide index-1">
+					<div class="index-1-icon">
+						<img src="./assets/image/index/5c8465fdcccd2.png">
+						<span><img src="./assets/image/index/5c84660937066.png"></span>
+					</div>
+					<p>泛文化娱乐</p>
+				</div><div class="swiper-slide index-1">
+					<div class="index-1-icon">
+						<img src="./assets/image/index/5bf4bb6f1c688.png">
+						<span><img src="./assets/image/index/5bf4bb6b068f0.png"></span>
+					</div>
+					<p>智能汽车</p>
+				</div><div class="swiper-slide index-1">
+					<div class="index-1-icon">
+						<img src="./assets/image/index/5bf4baf8a193e.png">
+						<span><img src="./assets/image/index/5bf4baf15d2e1.png"></span>
+					</div>
+					<p>智慧健康</p>
+				</div><div class="swiper-slide index-1">
+					<div class="index-1-icon">
+						<img src="./assets/image/index/5cb874b0c333d.png">
+						<span><img src="./assets/image/index/5cb874b38a207.png"></span>
+					</div>
+					<p>智慧商业</p>
+				</div><div class="swiper-slide index-1">
+					<div class="index-1-icon">
+						<img src="./assets/image/index/5bf4bbbc280b7.png">
+						<span><img src="./assets/image/index/5bf4bbabe27e2.png"></span>
+					</div>
+					<p>教育</p>
+				</div><div class="swiper-slide index-1">
+					<div class="index-1-icon">
+						<img src="./assets/image/index/5c73ffc5575f3.png">
+						<span><img src="./assets/image/index/5c73ffc079e92.png"></span>
+					</div>
+					<p>广告</p>
+				</div>			</div>
+
+		</div>
+		<div class="swiper-button-prev ms-prev swiper-button-disabled" id="ms-prev"></div>
+		<div class="swiper-button-next ms-next" id="ms-next"></div>
+	</div>
+
+</div>
 <!-- Initialize Swiper -->
     <script>
       $(function(){
@@ -547,7 +719,8 @@
         })
       })
       var swiper = new Swiper('.swiper-container', {
-        spaceBetween: 30,
+        loop:true,
+        spaceBetween: 0,
         centeredSlides: true,
         autoplay: {
           delay: 4000,
