@@ -15,6 +15,7 @@
     <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
     <script src="./assets/js/jquery-1.12.1.js"></script>
     <script src="./assets/js/swiper.min.js"></script>
+    <script src="./assets/js/scrollBar.js"></script>
     <script src="./assets/js/bootstrap.min.js"></script>
   </head>
 
@@ -344,19 +345,19 @@
               </li>
               <li>
                 <a href="#">客户案例</a>
-                <div class="dist menu-anli" style="display: block; opacity: 1;">
+                <div class="dis menu-anli">
                     <div class="scroll_main">
                       <div class="scroll_wrap">
                         <div class="scroll_cont">
-                          <div class="menu-15">
-                            <div class="menu-7" style="border: none;padding: 0;">
-                              <a class="menu-8">
-                                <p class="menu-13 hover">
+                          <div class="almenu">
+                            <div class="almenu1">
+                              <a class="almenu2">
+                                <p class="almenu3 hover">
                                   <span class="glyphicon glyphicon-menu-right"></span>
                                   智慧城市													
                                 </p>
                               </a>
-                              <div class="menu-14" style="display: block;">
+                              <div class="almenu4" style="display: block;">
                                   <a href="#">智慧安防</a>
                                   <a href="#">智慧交通</a>
                                   <a href="#">智能设备</a>
@@ -365,65 +366,117 @@
                                   <a href="#">视频大数据</a>													
                               </div>
                                                                                     
-                              <a href="#" class="menu-8">
+                              <a href="#" class="almenu2">
                                 <p>智能手机</p>
                               </a>												
-                              <a href="#" class="menu-8">
+                              <a href="#" class="almenu2">
                                 <p>泛文化娱乐</p>
                               </a>
-                              <a class="menu-8">
-                                <p class="menu-13">
+                              <a class="almenu2">
+                                <p class="almenu3">
                                   <span class="glyphicon glyphicon-menu-right"></span>
                                   智能汽车													
                                 </p>
                               </a>
                                                         
-                              <div class="menu-14">
+                              <div class="almenu4">
                                   <a href="#">智能驾驶</a>
                                   <a href="#">智能车舱</a>													
                               </div>																								
-                              <a href="#" class="menu-8">
+                              <a href="#" class="almenu2">
                                 <p>智慧健康</p>
                               </a>
-                              <a class="menu-8">
-                                <p class="menu-13">
+                              <a class="almenu2">
+                                <p class="almenu3">
                                   <span class="glyphicon glyphicon-menu-right"></span>
                                   智慧商业与金融													
                                 </p>
                               </a>
-                              <div class="menu-14">
+                              <div class="almenu4">
                                   <a href="#">线上金融</a>
                                   <a href="#">线下金融</a>
                                   <a href="#">智慧零售</a>													
                               </div>																								
-                              <a href="#" class="menu-8">
+                              <a href="#" class="almenu2">
                                 <p>教育</p>
                               </a>								
                             </div>
                           </div>
                         </div>
             
-                        <div class="scroll_bar" style="opacity: 1;">
-                          <div class="scroll_slider" style="top: 0px;"></div>
+                        <div class="scroll_bar">
+                          <div class="scroll_slider"></div>
                         </div>
                       </div>
                     </div>
                   </div>
               </li>
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">新闻中心</a>
-                <ul class="dropdown-menu">
-                  <li><a href="#">下拉菜单1</a></li>
-                  <li class="divider"></li>
-                  <li><a href="#">下拉菜单2</a></li>
-                  <li class="divider"></li>
-                </ul>
+              <script>
+                //案例下拉菜单滚动条
+                new CusScrollBar({
+                  contentSelector: '.scroll_cont', //滚动内容区
+                  barSelector: '.scroll_bar', //滚动条
+                  sliderSelector: '.scroll_slider' //滚动滑块
+                });
+  
+                /*案例下拉菜单*/ 
+                $('.almenu1 .almenu3').each(function(i){
+                  $(this).click(function(){
+                    if($(this).parent().next('.almenu4').is(":visible")){
+                      $(this).removeClass('hover');
+                      $('.almenu4').slideUp(300);
+                    }else{
+                      $('.almenu4').slideUp(300);
+                      $('.almenu3').removeClass('hover');
+                      $(this).addClass('hover');
+                      $(this).parent().next('.almenu4').slideDown(300);
+                    }
+  
+                    setTimeout(function(){
+                      if($('.almenu').outerHeight()-10<=$('.scroll_cont').outerHeight()){
+                        $('.scroll_bar').css('opacity',0)
+                      }else{
+                        $('.scroll_bar').css('opacity',1)
+                      }
+                    },400); 
+                  })
+                })
+        </script>
+              <li>
+                <a href="#">新闻中心</a>
               </li>
-              <li><a href="#">关于商汤</a></li>
-              <li><a href="#">加入我们</a></li>
+              <li class="dropdown">
+                <a href="#">关于商汤</a>
+                <div class="dis newslist">
+                  <div class="newsmenu">
+                    <div class="newsmenu1">
+                      <div class="newsmenu2">
+                        <a href="#">商汤使命</a>
+                        <a href="#">商汤介绍</a>
+                        <a href="#">商汤之路</a>
+                        <a href="#">联系我们</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <a href="#">加入我们</a>
+                <div class="dis joinlist">
+                    <div class="newsmenu">
+                      <div class="newsmenu1">
+                        <div class="newsmenu2">
+                          <a href="#">走进商汤</a>
+                          <a href="#">商汤动态</a>
+                          <a href="#">商汤投递</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </li>
           </ul>
       </div>
-      <div class="lang hidden-xs">
+      <div class="lang hidden-xs hidden-sm">
         <a class="hover">中</a>
         <a href="/en">EN</a>
       </div>
@@ -431,11 +484,41 @@
 
     <!-- Swiper -->
     <div class="banner">
-      <div class="swiper-container">
+      <div class="swiper-container banner-index">
         <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <img src="./assets/image/index/bannerbg1.jpg">
+          <div class="swiper-slide" style="width: 1920px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;">
+            <a href="#">    
+              <div class="slidebg"  style="background-image: url(./assets/image/index/bannerbg1.jpg)">
+                <!-- <img src="./assets/image/index/bannerbg1.jpg"> -->
+                    
+                <div class="bgtext">
+                  <img src="./assets/image/index/banner_txt1.png">
+                </div>  
+                
+              </div> 
+              <video class="videos" autoplay="autoplay" loop="loop" controls muted src="./assets/image/index/bannerbg1.mp4">
+              </video>
+
+            </a>
           </div>
+          <div class="swiper-slide" style="width: 1920px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;">
+            <a href="#">    
+              <div class="slidebg"  style="background-image: url(./assets/image/index/banner4_bg_ch.jpg)">
+                <!-- <img src="./assets/image/index/bannerbg1.jpg"> -->
+                    
+                <div class="bgtext">
+                  <!-- <img src="./assets/image/index/banner4_bg_ch.jpg"> -->
+                </div>  
+              </div>
+              <div class="videos">
+                <video class="" autoplay="autoplay" loop="loop" controls="controls" muted src="./assets/image/index/bannerbg3.mp4">
+                </video>
+              </div>
+            </a>
+          </div>
+          <!-- <div class="swiper-slide">
+            <img src="./assets/image/index/bannerbg1.jpg">
+          </div> -->
           <!-- <div class="swiper-slide">Slide 2</div>
           <div class="swiper-slide">Slide 3</div>
           <div class="swiper-slide">Slide 4</div>
