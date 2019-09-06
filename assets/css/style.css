@@ -1,3 +1,9 @@
+/* 修改的 */
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
 a{
     transition: all .4s;
     text-decoration: none;
@@ -79,14 +85,6 @@ a:hover{
 .navbar-nav>li:hover>.dis{
     display: block;
 }
-/* .dist{
-    position: absolute;
-    width: 100%;
-    left: 0;
-    text-align: left;
-    box-shadow: 0 2px 2px rgba(0,0,0,.1);
-    background: url(../image/index/pc-navbg.jpg) repeat-x top #fff;
-} */
 .dis{
     position: absolute;
     width: 100%;
@@ -143,7 +141,8 @@ a:hover{
     height: 70px;
     width: 70px;
 }
-.img1{
+.img1,
+.areaicon>span>img{
     position: absolute;
     left: 0;
     top: 0;
@@ -152,6 +151,8 @@ a:hover{
     opacity: 0;
     transition: all .3s;
 }
+.areaicon:hover>span>img,
+.area-active>.areaicon>span>img,
 .menu3:hover .img1{
     opacity: 1;
 }
@@ -310,7 +311,6 @@ a:hover{
     height: 100%;
     overflow: hidden;
     overflow-x: hidden;
-    overflow-y: hidden;
     position: relative;
 }
 .almenu2{
@@ -438,9 +438,6 @@ a:hover{
     height: 600px;
     width: 100%;
 }
-/* .swiper-wrapper{
-    justify-content: center;
-} */
 .swiper-slide {
     height: 600px;
   }
@@ -450,11 +447,13 @@ a:hover{
     width: 100%;
     height: 100%;
 }
-/* .banner_index .swiper-slide{
+/* 修改的 */
+.banner_index .swiper-slide{
+    width: 100%;
     position: relative;
     height: 600px;
     overflow: hidden;
-} */
+}
 .slidebg{
     background-repeat: no-repeat;
     background-size: cover;
@@ -462,8 +461,6 @@ a:hover{
     height: 100%;
     transition: all .5s;
     display: block;
-    background-attachment:fixed;
-    background-position:center;
 }
 .bgtext{
     position: absolute;
@@ -481,13 +478,15 @@ a:hover{
     left: 0;
     width: 100%;
     height: 100%;
-    background-position:center;
 }
-.videos video{
+/* 修改的 */
+.videos video {
     width: 100%;
     height: 100%;
+    object-fit:fill;
 }
-/* .banner_inro{
+
+ .banner_inro{
     width: 70%;
     display: flex;
     align-items: center;
@@ -516,12 +515,12 @@ a:hover{
 .banner_index .swiper-slide>a{
     height: 600px;
 }
-.banner_index .swiper-slide .bannerbg{
+.banner_index .swiper-slide .bannerbg {
     position: absolute;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-} */
+}
 
 /* AI */
 .ai{
@@ -588,6 +587,8 @@ a:hover{
 }
 
 
+
+
 /* ailist */
 .ailist{
     display: flex;
@@ -596,13 +597,11 @@ a:hover{
     flex-wrap: wrap;
 }
 .list1{
-    /* display: flex; */
     text-align: left;
     width: 31.2%;
     background-color: #f8f8f8;
 }
 .list1>div:first-child{
-    /* height: 200px; */
     position: relative;
     max-height: 200px;
     max-width: 355px;
@@ -642,18 +641,6 @@ a:hover{
     width: 28px;
     height: 28px;
 }
-/* .list1>div:first-child>div>p{
-    font-size: 32px;
-    color: #fff;
-    margin: 40px 0 0 40px;
-} */
-/* .list1>div:first-child>div>div{
-    position: relative;
-}
-.list1>div:first-child>div>div>a{
-    position: absolute;
-    bottom: 20px;
-} */
 .list1>div:nth-child(2){
     padding: 10px 38px 5px;
     font-size: 18px;
@@ -694,4 +681,286 @@ a:hover{
 .list1>div>li:hover>div{
     color: #e72427;
     transition: all .3s;
+}
+
+
+/* Area */
+.area .ai{
+    padding:55px 15px 0 15px;
+}
+/* area bannerlist */
+.row .swiper-slide{
+    width: 140.25px;
+    height: auto;
+}
+.areaicon{
+    width: 4.8rem;
+    margin: 0 auto .5rem;
+    transition: all .3s;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+}
+.areaicon img{
+    width: 57px;
+}
+.row .swiper-slide:hover>p,
+.area-active>p{
+    color: #e72427;
+}
+.areaicon:hover>img,
+.area-active>.areaicon>img{
+    opacity: 0;
+}
+/* area banner */
+.area-banner{
+    padding-top: 1rem;
+}
+.area-slide{
+    height: 540px;
+    position: relative;
+}
+.areabg{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    display: block;
+    transition: all .5s;
+}
+.area-text{
+    position: absolute;
+    height: 100%;
+    z-index: 1;
+    width: 100%;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    transition: all .5s;
+    opacity: 1;
+    padding: 1rem 22%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.area-text>h1{
+    color: #111111;
+    margin: 0 0 .6rem;
+    text-align: left;
+    font-size: 28px;
+    width: 50%;
+}
+/* .delay-h1{
+    animation-delay: .5s !important;
+} */
+/* area btn */
+.right-text>a{
+    background: inherit !important;
+    border: 1px solid #ffffff;
+}
+.right-text>a,
+.area-text>a{
+    height: 50px;
+    width: 180px;
+    display: inline-block;
+    color:#fff;
+    background: rgba(231,36,39,.7);
+    line-height: 50px;
+    font-size: 18px;
+    border-radius: 25px;
+    padding-left: 42px;
+    text-align: left;
+    position: relative;
+    top: 30px;
+}
+.right-text>a:hover,
+.area-text>a:hover{
+    background-color: #e7282b;
+    transition: all .3s;
+}
+.right-text>a> span,
+.area-text>a> span{
+    background: url('../image/index/djt-1.png') no-repeat 30% center;
+    overflow: hidden;
+    background-size: 60%;
+    width: 28px;
+    height: 28px;
+    display: inline-block;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    margin-top: -14px;
+    transition: background-position .3s;
+}
+.right-text>a> span::after,
+.area-text>a> span::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    border-left-color: transparent;
+    transition: all .3s;
+}
+.right-text>a:hover>span,
+.area-text>a:hover>span{
+    background-position-x: right;
+}
+.right-text>a:hover>span::after,
+.area-text>a:hover>span::after{
+    border-top-color: transparent;
+    transform: rotate(135deg);
+}
+
+/* case */
+.case-banner{
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.caserow{
+    overflow: hidden;
+    height: 100%;
+}
+.caserow-half{
+    float: left;
+    width: 50%;
+    position: relative;
+    overflow: hidden;
+}
+.half-left{
+    width: 100%;
+    height: 0;
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+.pad1{
+    padding-bottom: 70.8%;
+}
+.halfbg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    transform: all .5s;
+    /* padding-bottom: 70.8%; */
+}
+.half-right{
+    position: absolute;
+    color: #cfcfcf;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /* font-size: .44rem; */
+    padding: 5% 10% 5% 5%;
+    line-height: 2;
+}
+.right-text{
+    max-width: 330px;
+    margin: 0 auto;;
+}
+.right-text>h1{
+    font-size: 40px;
+    color: #fff;
+    margin: 0 0 3rem;
+}
+.right-text>p>img{
+    margin-top: .8rem;
+}
+.case-page{
+    width: 24px !important;
+    right: 30px;
+    left: auto !important;
+    bottom: auto !important;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.case-page .swiper-pagination-bullet{
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    opacity: 1;
+    background: none;
+    margin: .4rem 0 !important;
+    position: relative;
+    border: 1px solid rgba(0,0,0,0);
+}
+.case-page .swiper-pagination-bullet:hover,
+.case-page .swiper-pagination-bullet-active{
+    border: 1px solid #fff !important;
+}
+.case-page .swiper-pagination-bullet:after{
+    content: '';
+    width: 4px;
+    height: 4px;
+    background: #FFF;
+    position: absolute;
+    left: 9px;
+    top: 9px;
+    border-radius: 50%;
+}
+
+/* partners */
+.partners{
+    background: #f0f0f0;
+    padding-bottom: 35px;
+}
+.pnflex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    flex-wrap: wrap;
+    padding: 100px 0 50px;
+}
+.partnersLeft{
+    width: 66.4%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.partnersRight{
+    width: 20.5%;
+}
+.leftitem{
+    width: 27.16%;
+    margin-right: 6.17%;
+    margin-bottom: 6.17%;
+    background: #fff;
+    float: left;
+    cursor: pointer;
+    transition: all .5s;
+}
+.leftimgBox{
+    width: 100%;
+    padding-bottom: 100%;
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+.leftimg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding:5%;
+    cursor: default;
+}
+.leftimg>img{
+    border: 0 none;
+    max-width: 100%;
+    max-height: 100%;
 }
