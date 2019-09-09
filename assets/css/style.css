@@ -1,4 +1,3 @@
-/* 修改的 */
 html,body{
     width: 100%;
     height: 100%;
@@ -10,6 +9,22 @@ a{
 }
 a:hover{
     text-decoration: none;
+}
+.heade{
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+    width: 100%;
+    transition: all 1s;
+}
+.heade_hover{
+    box-shadow: 0 1px 10px rgba(0,0,0,.15);
+    background: #fff;
+    height: 60px;
+    transition: all .6s;
+}
+.ah{
+    color: #969696 !important;
 }
 .navbar{
     border-radius: 0px;
@@ -51,8 +66,6 @@ a:hover{
     left: 0;
     bottom: 0;
     transition: all .3s;
-    /* animation:mymove 5s infinite;
-    -webkit-animation:mymove 5s infinite;  */
 }
 .navbar-nav>li{
     display: table-cell;
@@ -96,14 +109,7 @@ a:hover{
 }
 .menu1{
     display: flex;
-    /* padding: 1.2rem 0 1.8rem; */
-    padding: 5rem 0 6rem;
-}
-.width-1200{
-    width: 1220px;
-    overflow: hidden;
-    position: relative;
-    margin: 0 auto;
+    padding: 1.2rem 0 1.8rem;
 }
 .menu2{
     width: 20%;
@@ -151,6 +157,9 @@ a:hover{
     opacity: 0;
     transition: all .3s;
 }
+.areaicon>span>img{
+    width: 57px
+}
 .areaicon:hover>span>img,
 .area-active>.areaicon>span>img,
 .menu3:hover .img1{
@@ -190,10 +199,6 @@ a:hover{
     border-right: 2px solid #e72427;
     color: #e72427;  
 }
-/* .menulist p:hover{
-    border-right: 2px solid #e72427;
-    color: #e72427;
-} */
 .listmenu1{
     font-size: 14px;
     line-height: 30px;
@@ -216,15 +221,10 @@ a:hover{
 .menu-zhcs.hover{
     color: #e72427;
 }
-/* .listmenu1:hover>p{
-    color: #e72427;
-} */
 .almenu3 span,
 .menu-zhcs span{
     float: right;
-    /* font-size: 20px; */
     position: relative;
-    /* top: 5px; */
     transition: all .2s ease-in-out;
     backface-visibility: hidden;
 }
@@ -238,7 +238,6 @@ a:hover{
 .zhcsmenu p{
     margin: 0;
     padding: 0;
-    /* line-height: 1.5; */
 }
 .listmenu1>p>a,
 .zhcsmenu p>a{
@@ -376,7 +375,7 @@ a:hover{
     transform: translateX(150%);
 }
 .newsmenu1{
-    margin: 2.4rem auto .0rem 0;
+    margin: .6rem auto .0rem 0;
     width: 100%;
     text-align: center;
 }
@@ -447,7 +446,6 @@ a:hover{
     width: 100%;
     height: 100%;
 }
-/* 修改的 */
 .banner_index .swiper-slide{
     width: 100%;
     position: relative;
@@ -464,9 +462,12 @@ a:hover{
 }
 .bgtext{
     position: absolute;
-    top: 30%;
-    left: 0;
-    transform: translateX(100%);
+    left: 15%;
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     z-index: 1;
 }
 .videos{
@@ -479,7 +480,6 @@ a:hover{
     width: 100%;
     height: 100%;
 }
-/* 修改的 */
 .videos video {
     width: 100%;
     height: 100%;
@@ -586,9 +586,6 @@ a:hover{
     transform: rotate(135deg);
 }
 
-
-
-
 /* ailist */
 .ailist{
     display: flex;
@@ -653,6 +650,9 @@ a:hover{
     padding-bottom: 28px;
     text-overflow: ellipsis;
 }
+.list1>div>li:last-child{
+    border-bottom: #dcdcdc 1px none;
+}
 .list1>div>li>a{
     column-count: #333333;
     transition: all 0.3s;
@@ -663,12 +663,11 @@ a:hover{
     height: 60px;
     line-height: 1.8;
     display: -webkit-box;
+    white-space: normal;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
     text-align: justify;
-    overflow:hidden;
-    -o-text-overflow: ellipsis;
-       text-overflow: ellipsis; 
+    overflow: hidden;
 }
 .list1>div>li>div{
     text-align: left;
@@ -694,7 +693,7 @@ a:hover{
     height: auto;
 }
 .areaicon{
-    width: 4.8rem;
+    width: 57px;
     margin: 0 auto .5rem;
     transition: all .3s;
     border-radius: 50%;
@@ -755,10 +754,17 @@ a:hover{
     animation-delay: .5s !important;
 } */
 /* area btn */
+/* partnersRight btn */
 .right-text>a{
     background: inherit !important;
     border: 1px solid #ffffff;
 }
+.partnersRight>a{
+    background: url(../image/index/btn-bg1.png) no-repeat repeat center !important;
+    background-size: 100% 100%;
+}
+
+.partnersRight>a,
 .right-text>a,
 .area-text>a{
     height: 50px;
@@ -774,11 +780,13 @@ a:hover{
     position: relative;
     top: 30px;
 }
+.partnersRight>.a:hover,
 .right-text>a:hover,
 .area-text>a:hover{
     background-color: #e7282b;
     transition: all .3s;
 }
+.partnersRight>a> span,
 .right-text>a> span,
 .area-text>a> span{
     background: url('../image/index/djt-1.png') no-repeat 30% center;
@@ -793,6 +801,7 @@ a:hover{
     margin-top: -14px;
     transition: background-position .3s;
 }
+.partnersRight>a> span::after,
 .right-text>a> span::after,
 .area-text>a> span::after{
     content: '';
@@ -804,10 +813,12 @@ a:hover{
     border-left-color: transparent;
     transition: all .3s;
 }
+.partnersRight>a:hover>span,
 .right-text>a:hover>span,
 .area-text>a:hover>span{
     background-position-x: right;
 }
+.partnersRight>a:hover>span::after,
 .right-text>a:hover>span::after,
 .area-text>a:hover>span::after{
     border-top-color: transparent;
@@ -815,6 +826,51 @@ a:hover{
 }
 
 /* case */
+.delay-1{animation-delay: .1s !important;}
+.delay-2{animation-delay: .2s !important;}
+.delay-3{animation-delay: .3s !important;}
+.delay-4{animation-delay: .4s !important;}
+.delay-5{animation-delay: .5s !important;}
+.delay-6{animation-delay: .6s !important;}
+.delay-7{animation-delay: .7s !important;}
+.delay-8{animation-delay: .8s !important;}
+.delay-9{animation-delay: .9s !important;}
+
+.area-banner .swiper-slide-active .wo{
+    animation: fadeInUp 1s backwards .5s;
+    -webkit-animation: fadeInUp 1s backwards .5s;
+}
+.case-banner .swiper-slide-active .wo{
+    animation: fadeInUp 1s backwards;
+    -webkit-animation: fadeInUp 1s backwards;
+}
+@-webkit-keyframes fadeInUp {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 100%, 0);
+      transform: translate3d(0, 100%, 0);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: none;
+      transform: none;
+    }
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 100%, 0);
+      transform: translate3d(0, 100%, 0);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: none;
+      transform: none;
+    }
+  }
 .case-banner{
     width: 100%;
     position: relative;
@@ -873,10 +929,10 @@ a:hover{
 .right-text>h1{
     font-size: 40px;
     color: #fff;
-    margin: 0 0 3rem;
+    /* margin: 0 0 3rem; */
 }
 .right-text>p>img{
-    margin-top: .8rem;
+    margin-top: .5rem;
 }
 .case-page{
     width: 24px !important;
@@ -931,7 +987,7 @@ a:hover{
     flex-wrap: wrap;
 }
 .partnersRight{
-    width: 20.5%;
+    width: 23%;
 }
 .leftitem{
     width: 27.16%;
@@ -941,6 +997,9 @@ a:hover{
     float: left;
     cursor: pointer;
     transition: all .5s;
+}
+.leftitem:hover{
+    transform: translateY(-6px);
 }
 .leftimgBox{
     width: 100%;
@@ -964,3 +1023,112 @@ a:hover{
     max-width: 100%;
     max-height: 100%;
 }
+.partnersRight>h1{
+    font-size: 50px;
+    line-height: 1.4;
+    margin: 0 0 20px;
+    color: #111111;
+}
+.partnersRight>p{
+    font-size: 22px;
+    color: #707070;
+    line-height: 1.72;
+}
+
+
+
+/* footer */
+.footer-bg{
+    background-color: #252526;
+    font-size: 18px;
+    color: #707070;
+}
+
+.footer1{
+    margin: 80px 15%;
+    overflow: visible;
+}
+.footer-p{
+    padding: 0 10px;
+    text-align: left;
+    overflow: hidden;
+    margin-bottom: 35px;
+}
+.footer-p>span{
+    color: #dcdcdc;
+}
+.footer-p>i{
+    font-style: normal;
+    color: #dcdcdc;
+}
+.footer2{
+    background: #2e2e2f;
+    height: 2.8em;
+    border-radius: 1.4em;
+    line-height: 2.8em;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+.footer2>a{
+    color: #969696;
+    transition: all .4s;
+}
+.footer2>a:hover{
+    color: #e72427;
+}
+.footer3{
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer-logo{
+    margin-right: .5rem;
+}
+.footer3>a{
+    height: .7rem;
+    width: .7rem;
+    overflow: hidden;
+    margin: 0 .5rem;
+}
+.footer3>a>img{
+    /* width: 100%; */
+    max-height: none;
+    transform: translateY(-50%);
+    transition: all .3s;
+}
+.footer3>a:hover>img{
+    transform: translateY(0%);
+    transition: all .3s;
+}
+.wxbox{
+    width: 100px;
+    height: 105px;
+    background-image: url(../image/index/rwmbg.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 8px 0 0 0;
+    position: absolute;
+    margin-top: 35px;
+    transform: translate3d(-35%,-59%,0);
+    z-index: 10;
+    display: none;
+ }
+ .wxbox>img{
+     width: 100%;
+ }
+ .footer3>a:hover>.wxbox{
+     display: block;
+ }
+
+ .footer-ba{
+     font-size: 13px;
+     border-top: 1px solid #434344;
+     padding: 10px 0 20px;
+     display: flex;
+     justify-content: space-around;
+ }
+ .footer-ba span{
+     padding-right: 10px
+ }
