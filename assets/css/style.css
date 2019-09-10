@@ -32,7 +32,7 @@ a:hover{
 .navbar-default{
     background-color: initial;
     border-color: transparent;
-    height: 70px;
+    height: 60px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -47,12 +47,15 @@ a:hover{
 .navbar-nav{
     width: 760px;
     text-align: center;
-    height: 70px;
+    height: 60px;
 }
 .nav>li>a{
     display: inline-block;
     padding: 10px 0px 0px;
-    line-height: 55px;
+    line-height: 50px;
+}
+.nav>li:hover>a, .nav>li.hover>a{
+    color: #000000 !important;
 }
 .nav>li:hover>a:after, .nav>li.hover>a:after{
     width: 100%;
@@ -71,14 +74,14 @@ a:hover{
     display: table-cell;
     text-align: center;
     width: 1%;
-    height: 70px;
+    height: 100%;
     position: static;
     float: none;
 }
 .navbar-default .navbar-nav>li>a{
     font-size: 16px;
     color: #fff;
-    height: 70px;
+    height: 100%;
     padding-bottom: 0px;
     border: 2px solid initial;
 }
@@ -510,7 +513,9 @@ a:hover{
     background-size: cover;
     width: 100%;
     transition: all .5s;
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .banner_index .swiper-slide>a{
     height: 600px;
@@ -1131,4 +1136,21 @@ a:hover{
  }
  .footer-ba span{
      padding-right: 10px
+ }
+
+
+
+
+
+ /* face */
+ .hxjs-nav2>.glyphicon{
+     font-size: 18px;
+ }
+ .hxjs-nav1.active .hxjs-nav2 span.glyphicon{
+     transform: rotate(180deg);
+ }
+ .hxjs-nav2 span.glyphicon{
+    transition: all .5s;
+    transform-origin: 50% 50%;
+    -moz-transform-origin: 50% 50%;
  }

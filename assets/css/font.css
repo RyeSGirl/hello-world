@@ -79,7 +79,7 @@
 	line-height: 1;
 	display: inline-block;
 	text-decoration: none;
-	-webkit-font-smoothing: antialiased
+	-webkit-font-smoothing: antialiased;
 }
 
 .mui-icon.mui-active {
