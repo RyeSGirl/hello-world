@@ -440,7 +440,7 @@ a:hover{
     height: 600px;
     width: 100%;
 }
-.swiper-slide {
+.banner .swiper-slide {
     height: 600px;
   }
 .swiper-slide a{
@@ -1137,9 +1137,6 @@ a:hover{
  .footer-ba span{
      padding-right: 10px
  }
-
-
-
 
 
  /* face */

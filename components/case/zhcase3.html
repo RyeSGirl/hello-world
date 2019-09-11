@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>人脸与人体分析技术-核心技术-SenseTime|商汤科技</title>
+    <title>智能设备</title>
     <!-- Bootstrap -->
     <link href="../../assets/css/bootstrap.min.css" rel="stylesheet">
     <!-- <link href="../../assets/css/font.css" rel="stylesheet"> -->
@@ -292,64 +292,64 @@
                       <span class="glyphicon glyphicon-menu-right"></span>
                     </p>           
                   </div>           
-                  <script>
-                            $(function() {
-                              //产品线切换
-                              $('.menulist>p').each(function(i) {
-                                $(this).mouseover(function() {
-                                  if ($(this).hasClass('hover')) {
-                                  } else {
-                                    $('.menulist>p').removeClass('hover');
-                                    $(this).addClass('hover');
-                                    $('.listmenu1').hide();
-                                    $('.listmenu1').eq(i).stop().fadeIn()
-                                  }
-                                })
-                              })
-                              //智慧城市
-                              $('#menu-zhcs>.menu-zhcs').each(function(i){
-                                $(this).click(function(){
-                                  if ($(this).hasClass('hover')) {
-                                    $(this).removeClass('hover');
-                                    $(this).next($('.zhcsmenu')).slideUp()
-                                  } else {
-                                    $('#menu-zhcs').find($('.menu-zhcs')).removeClass('hover');
-                                    $(this).addClass('hover');
-                                    $('#menu-zhcs').find($('.zhcsmenu')).slideUp();
-                                    $(this).next($('.zhcsmenu')).slideDown()
-                                  }
-                                })
-                              })
-                              //智能车舱
-                              $('#menu-zncc>.menu-zhcs').each(function(i){
-                                $(this).click(function(){
-                                  if ($(this).hasClass('hover')) {
-                                    $(this).removeClass('hover');
-                                    $(this).next($('.zhcsmenu')).slideUp()
-                                  } else {
-                                    $('#menu-zncc').find($('.menu-zhcs')).removeClass('hover');
-                                    $(this).addClass('hover');
-                                    $('#menu-zncc').find($('.zhcsmenu')).slideUp();
-                                    $(this).next($('.zhcsmenu')).slideDown()
-                                  }
-                                })
-                              })
-                              //智慧商业
-                              $('#menu-zhsy>.menu-zhcs').each(function(i){
-                                $(this).click(function(){
-                                  if ($(this).hasClass('hover')) {
-                                    $(this).removeClass('hover');
-                                    $(this).next($('.zhcsmenu')).slideUp()
-                                  } else {
-                                    $('#menu-zhsy').find($('.menu-zhcs')).removeClass('hover');
-                                    $(this).addClass('hover');
-                                    $('#menu-zhsy').find($('.zhcsmenu')).slideUp();
-                                    $(this).next($('.zhcsmenu')).slideDown()
-                                  }
-                                })
-                              })
-                            })
-                  </script>
+<script>
+        $(function() {
+            //产品线切换
+            $('.menulist>p').each(function(i) {
+            $(this).mouseover(function() {
+                if ($(this).hasClass('hover')) {
+                } else {
+                $('.menulist>p').removeClass('hover');
+                $(this).addClass('hover');
+                $('.listmenu1').hide();
+                $('.listmenu1').eq(i).stop().fadeIn()
+                }
+            })
+            })
+            //智慧城市
+            $('#menu-zhcs>.menu-zhcs').each(function(i){
+            $(this).click(function(){
+                if ($(this).hasClass('hover')) {
+                $(this).removeClass('hover');
+                $(this).next($('.zhcsmenu')).slideUp()
+                } else {
+                $('#menu-zhcs').find($('.menu-zhcs')).removeClass('hover');
+                $(this).addClass('hover');
+                $('#menu-zhcs').find($('.zhcsmenu')).slideUp();
+                $(this).next($('.zhcsmenu')).slideDown()
+                }
+            })
+            })
+            //智能车舱
+            $('#menu-zncc>.menu-zhcs').each(function(i){
+            $(this).click(function(){
+                if ($(this).hasClass('hover')) {
+                $(this).removeClass('hover');
+                $(this).next($('.zhcsmenu')).slideUp()
+                } else {
+                $('#menu-zncc').find($('.menu-zhcs')).removeClass('hover');
+                $(this).addClass('hover');
+                $('#menu-zncc').find($('.zhcsmenu')).slideUp();
+                $(this).next($('.zhcsmenu')).slideDown()
+                }
+            })
+            })
+            //智慧商业
+            $('#menu-zhsy>.menu-zhcs').each(function(i){
+            $(this).click(function(){
+                if ($(this).hasClass('hover')) {
+                $(this).removeClass('hover');
+                $(this).next($('.zhcsmenu')).slideUp()
+                } else {
+                $('#menu-zhsy').find($('.menu-zhcs')).removeClass('hover');
+                $(this).addClass('hover');
+                $('#menu-zhsy').find($('.zhcsmenu')).slideUp();
+                $(this).next($('.zhcsmenu')).slideDown()
+                }
+            })
+            })
+        })
+</script>
                 </div>
             </li>
             <li>
@@ -420,37 +420,37 @@
                   </div>
                 </div>
             </li>
-            <script>
-              //案例下拉菜单滚动条
-              new CusScrollBar({
-                contentSelector: '.scroll_cont', //滚动内容区
-                barSelector: '.scroll_bar', //滚动条
-                sliderSelector: '.scroll_slider' //滚动滑块
-              });
+<script>
+    //案例下拉菜单滚动条
+    new CusScrollBar({
+    contentSelector: '.scroll_cont', //滚动内容区
+    barSelector: '.scroll_bar', //滚动条
+    sliderSelector: '.scroll_slider' //滚动滑块
+    });
 
-              /*案例下拉菜单*/ 
-              $('.almenu1 .almenu3').each(function(i){
-                $(this).click(function(){
-                  if($(this).parent().next('.almenu4').is(":visible")){
-                    $(this).removeClass('hover');
-                    $('.almenu4').slideUp(300);
-                  }else{
-                    $('.almenu4').slideUp(300);
-                    $('.almenu3').removeClass('hover');
-                    $(this).addClass('hover');
-                    $(this).parent().next('.almenu4').slideDown(300);
-                  }
+    /*案例下拉菜单*/ 
+    $('.almenu1 .almenu3').each(function(i){
+    $(this).click(function(){
+        if($(this).parent().next('.almenu4').is(":visible")){
+        $(this).removeClass('hover');
+        $('.almenu4').slideUp(300);
+        }else{
+        $('.almenu4').slideUp(300);
+        $('.almenu3').removeClass('hover');
+        $(this).addClass('hover');
+        $(this).parent().next('.almenu4').slideDown(300);
+        }
 
-                  setTimeout(function(){
-                    if($('.almenu').outerHeight()-10<=$('.scroll_cont').outerHeight()){
-                      $('.scroll_bar').css('opacity',0)
-                    }else{
-                      $('.scroll_bar').css('opacity',1)
-                    }
-                  },400); 
-                })
-              })
-      </script>
+        setTimeout(function(){
+        if($('.almenu').outerHeight()-10<=$('.scroll_cont').outerHeight()){
+            $('.scroll_bar').css('opacity',0)
+        }else{
+            $('.scroll_bar').css('opacity',1)
+        }
+        },400); 
+    })
+    })
+</script>
             <li>
               <a href="#">新闻中心</a>
             </li>
@@ -492,229 +492,186 @@
   </nav>
 </header>
 
-<div class="nr-banner a-background" style="background-image: url('../../assets/image/technology/hxjs-banner.jpg');">
+<div class="nr-banner a-background" style="background-image: url('../../assets/image/case/khal-banner.jpg');">
   <div class="container">
     <div class="row">
       <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
-        <h1 class="wow fadeInUpa">智慧城市</h1>
-        <p class="wow fadeInUpa" data-wow-delay=".2s">提升城市运营效率，打造创新应用场景</p>
+        <h1 class="wow fadeInUpa">客户案例</h1>
+        <p class="wow fadeInUpa" data-wow-delay=".2s">专业的合作伙伴与客户，遍及互联网、手机、金融、遥感等多个领域</p>
       </div>
     </div>
   </div>
 </div>
-<!-- 二级swiper导航 -->
-<section style="background: #f8f8f8;">
-    <div class="width-1220 nr-nav-jia swiper-container-horizontal swiper-container-android" id="nr-nav-jia">
-        <div class="swiper-wrapper">
-            <a href="./Security_SenseFoundry.html#zhce" class="hover swiper-slide wow fadeInUpa">
-                <div class="img">
-                    <img src="../../assets/image/service/x-zhaf.jpg">
-                    <img src="../../assets/image/service/x-zhaf-h.jpg" class="img-hover">
-                </div>
-                <p>智慧安防</p>
-            </a>
-            <a href="./Transportation.html#zhce" class="swiper-slide wow fadeInUpa delay-1">
-                <div class="img">
-                    <img src="../../assets/image/service/x-zhjt.jpg">
-                    <img src="../../assets/image/service/x-zhjt-h.jpg" class="img-hover">
-                </div>
-                <p>智慧交通</p>
-            </a>
-            <a href="./House.html#zhce" class="swiper-slide wow fadeInUpa delay-2">
-                <div class="img">
-                    <img src="../../assets/image/service/x-zhdc.jpg">
-                    <img src="../../assets/image/service/x-zhdc-h.jpg" class="img-hover">
-                </div>
-                <p>智慧地产</p>
-            </a>
-            
-            <a href="./Hardware_SmartDeviceSolution.html#zhce" class="swiper-slide wow fadeInUpa delay-4">
-                <div class="img">
-                    <img src="../../assets/image/service/x-znsb.jpg">
-                    <img src="../../assets/image/service/x-znsb-h.jpg" class="img-hover">
-                </div>
-                <p>智能设备</p>
-            </a>
-            <a href="./Operator.html#zhce" class="swiper-slide wow fadeInUpa delay-5">
-                <div class="img">
-                    <img src="../../assets/image/service/x-yys.jpg">
-                    <img src="../../assets/image/service/x-yys-h.jpg" class="img-hover">
-                </div>
-                <p>运营商</p>
-            </a>
-
-            <a href="./RemoteSensing.html#zhce" class="swiper-slide wow fadeInUpa delay-6">
-                <div class="img">
-                    <img src="../../assets/image/service/x-yg.jpg">
-                    <img src="../../assets/image/service/x-yg-h.jpg" class="img-hover">
-                </div>
-                <p>遥感</p>
-            </a>
-            <a href="./Video_SenseKitchen.html#zhce" class="swiper-slide wow fadeInUpa delay-7">
-                <div class="img">
-                    <img src="../../assets/image/service/x-dsj.jpg">
-                    <img src="../../assets/image/service/x-dsj-h.jpg" class="img-hover">
-                </div>
-                <p>视频大数据</p>
-            </a>
-        </div>
-    </div>
-</section>
-
-<!-- 产品展开收起列表 -->
-<section class="border-bottom" id="product">
-  <div class="width-1220">
-    <p class="cplb"><span id="cplb">收起产品列表</span></p>
-    <ul class="cplb-1" id="cplb-con">
-      <li class="hover">
-        <span>
-          <img src="../../assets/image/service/cp-nav7.png" class="img">
-          <img src="../../assets/image/service/cp-nav7-h.png" class="img-hover">
-        </span>
-        <a href="/Service/Security_SenseFoundry.html#product">
-          SenseFoundry<br>方舟城市级开放视觉平台
-        </a>
-      </li>
-      <li>
-        <span>
-          <img src="../../assets/image/service/cp-nav3.png" class="img">
-          <img src="../../assets/image/service/cp-nav3-h.png" class="img-hover">
-        </span>
-        <a href="/Service/Security_SensePortrait_D.html#product">
-          SensePortrait-D<br>人脸动态比对服务器
-        </a>
-      </li>
-      <li>
-        <span>
-          <img src="../../assets/image/service/icon-9.jpg" class="img">
-          <img src="../../assets/image/service/icon-8.jpg" class="img-hover">
-        </span>
-        <a href="/Service/Security_SensePortrait_S.html#product">
-          SensePortrait-S<br>人脸静态比对服务器
-        </a>
-      </li>
-      <li>
-        <span>
-          <img src="../../assets/image/service/cp-nav5.png" class="img">
-          <img src="../../assets/image/service/cp-nav5-h.png" class="img-hover">
-        </span>
-        <a href="/Service/Security_SenseVideo_A.html#product">
-          SenseVideo-A<br>视频结构化解析服务器
-        </a>
-      </li>
-      <li>
-        <span>
-          <img src="../../assets/image/service/cp-nav2.png" class="img">
-          <img src="../../assets/image/service/cp-nav2-h.png" class="img-hover">
-        </span>
-        <a href="/Service/Security_SenseTotem.html#product">
-          SenseTotem<br>深度学习视图情报研判系统
-        </a>
-      </li>
-
-      <li>
-        <span>
-          <img src="../../assets/image/service/cp-nav4.png" class="img">
-          <img src="../../assets/image/service/cp-nav4-h.png" class="img-hover">
-        </span>
-        <a href="/Service/Security_SenseFace.html#product">
-          SenseFace<br>人脸大数据实战平台
-        </a>
-      </li>
-      <li>
-        <span>
-          <img src="../../assets/image/service/cp-nav6.png" class="img">
-          <img src="../../assets/image/service/cp-nav6-h.png" class="img-hover">
-        </span>
-        <a href="/Service/Security_SenseDLC.html#product">
-          SenseDLC<br>人脸抓拍摄像机
-        </a>
-      </li>
-    </ul>
-  </div>
-</section>
 
 <!-- 二级页面导航 -->
-<section class="border-bottom nrnav-box" id="nrnav-box">
-  <div class="width-1220 nr-nav">
-    <div class="nr-nav-left">SenseFoundry 方舟城市级开放视觉平台</div>
-    <ul class="nr-nav-right1" id="nr-nav">
-      <li><a class="">产品介绍</a></li>
-      <li><a class="hover">产品优势</a></li>
-      <li><a class="">助力场景</a></li>
-    </ul>
-    <div class="clearfix"></div>
-  </div>
+<section class="border-bottom nrnav-box" style="overflow: visible; top: 0px;" id="nrnav-box">
+    <div class="width-1220 nr-nav">
+        <!--<div class="nr-nav-left">智慧安防</div>-->
+        <div class="nr-crumbs">
+            <div class="khal-nr-nav">
+                <span style="color: #707070;">客户案例</span>
+                <span class="glyphicon glyphicon-menu-down"></span>
+                <span>智慧城市</span>
+                <span class="glyphicon glyphicon-menu-down"></span>
+                    <span>智能设备</span>				
+                </div>
+
+            <!--下拉菜单-->
+            <div class="hxjs-nav3 khal-nr-nav-box">
+                <div class="box_Arrow"></div>
+                <a class="khal-nav-menu ">智慧城市<span class="glyphicon glyphicon-menu-right"></span></a>
+                <div class="khal-nr-nav-box2">
+                    <a href="" >智慧安防</a>
+                    <a href="">智慧交通</a>													
+                    <a href="" class="red">智能设备</a>													
+                    <a href="">运营商</a>													
+                    <a href="">遥感</a>													
+                    <a href="">视频大数据</a>									
+                </div>																
+                <a class="khal-nav-menu" href="">智能手机</a>
+                <a class="khal-nav-menu" href="">泛文化娱乐</a>
+                <a class="khal-nav-menu">智能汽车<span class="glyphicon glyphicon-menu-right"></span></a>
+                <div class="khal-nr-nav-box2">
+                    <a href="">智能驾驶</a>													
+                    <a href="">智能车舱</a>									
+                </div>								
+                <a class="khal-nav-menu" href="">智慧健康</a>
+                <a class="khal-nav-menu">智慧商业与金融<span class="glyphicon glyphicon-menu-right"></span></a>
+                <div class="khal-nr-nav-box2">
+                    <a href="">线上金融</a>													
+                    <a href="">线下金融</a>													
+                    <a href="">智慧零售</a>									
+                </div>								
+                <a class="khal-nav-menu" href="">教育</a>
+                </div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
 </section>
 <div id="nrnav-box-height"></div>
 
-<!-- 产品详情 -->
-<section id="nr-nav-con">
-  
-  <!--产品介绍-->
-  <div class="cp-title">产品介绍</div>
-  <div class="cp-1 cp-text-bg1">
-    <div class="cp-text width-1220">
-      <div class="cp-text1">
-        <h2 class="cp-text-h2 wow fadeInUpa" data-wow-delay=".2s">该平台以商汤原创深度学习算法为核心，采用 SOA 与微服务架构设计，支持人脸识别和分析，可支撑上层应用的实时黑名单布控、轨迹还原等业务。定位于可扩展至十万路级别视图源、千亿级别非结构化特征和结构化信息融合处理和分析的开放视觉赋能平台。</h2>
-        <div class="cp-text-a wow fadeInUpa" data-wow-delay=".4s">
-          <!--<span class="hover" data-toggle="modal" data-target="#vodeo">观看视频</span>
-          <span class="cp-text-a-1" data-toggle="modal" onclick="sqsy('../../form.html')">申请试用</span>-->
+<!-- 轮播 -->
+<section>
+    <div class="width-1220 cp-4">
+        <div class="cp-6 khal-1" id="khal-menubox">
+            <div class="swiper-wrapper">
+                <div class="cp-addname hover swiper-slide">
+                    <a class="cp-5 m-center khal-menu ">
+                        <div><img src="../../assets/image/case/5d147a8673773.png"></div>
+                    </a>
+                    <p>万科</p>
+                </div>
+                <div class="cp-addname hover swiper-slide">
+                    <a class="cp-5 m-center khal-menu ">
+                        <div><img src="../../assets/image/case/5d147c7275b10.png"></div>
+                    </a>
+                    <p>2018 WAIC</p>
+                </div>
+                <div class="cp-addname hover swiper-slide">
+                    <a class="cp-5 m-center khal-menu ">
+                        <div><img src="../../assets/image/case/5d147d6572f39.png"></div>
+                    </a>
+                    <p>世茂集团</p>
+                </div>
+                <div class="cp-addname hover swiper-slide">
+                    <a class="cp-5 m-center khal-menu ">
+                        <div><img src="../../assets/image/case/5d147e07a294d.png"></div>
+                    </a>
+                    <p>中国移动营业厅</p>
+                </div>
+            </div>
         </div>
-      </div>
+        <div class="swiper-button-prev swiper-button-disabled"></div>
+        <div class="swiper-button-next swiper-button-disabled"></div>
     </div>
-    <div class="cp-bg a-background cp-bg1" style="background-image: url(../../assets/image/service/Security_SenseFoundry1.jpg);"></div>
-  </div>
-
-  <!--产品优势-->
-  <div class="cp-title cp-title2">产品优势</div>
-  <div class="cp-xg width-1220">
-    <div class="cp-xg1">
-      <div class="cp-xg2 wow fadeInUpa">
-        <div class="img"><img src="../../assets/image/service/zhaf-ys1.png"></div>
-        <p>微服务架构，容器化部署，应用快速上线</p>
-      </div>
-      <div class="cp-xg2 wow fadeInUpa delay-1">
-        <div class="img"><img src="../../assets/image/service/zhaf-ys2.png"></div>
-        <p>支持单机版和分布式版本，可平滑扩展</p>
-      </div>
-      <div class="cp-xg2 wow fadeInUpa delay-2">
-        <div class="img"><img src="../../assets/image/service/zhaf-ys3.png"></div>
-        <p>支持关键数据 3 副本保护，避免单点失效</p>
-      </div>
-      <div class="cp-xg2 wow fadeInUpa">
-        <div class="img"><img src="../../assets/image/service/zhaf-ys4.png"></div>
-        <p>基于 GPU 的亿级静态大库高并发秒级检索</p>
-      </div>
-      <div class="cp-xg2 wow fadeInUpa delay-1">
-        <div class="img"><img src="../../assets/image/service/zhaf-ys5.png"></div>
-        <p>基于 GPU 的千亿级路人库高并发秒级检索</p>
-      </div>
-      <div class="cp-xg2 wow fadeInUpa delay-2">
-        <div class="img"><img src="../../assets/image/service/zhaf-ys6.png"></div>
-        <p>具备大容量、高性能、高可用性、高开放度等特点</p>
-      </div>
+    <div class="width-100 khal-2" id="khal">
+        <div class="swiper-wrapper" style="height: 1380px;">
+            <!--1-->
+            <div class="swiper-slide">
+                <div class="khal-3 a-background" style="background-image: url('../../assets/image/case/5d147a8e725f6.jpg');">
+                    <div class="width-1220 khal-8">
+                        <div class="khal-4">
+                            <!--notempty name="xo.pic2"><img src="/上海西岸" class="khal-img" /></notempty-->
+                            <p class="delay-2">万科</p>
+                            <p class="delay-2 case_info">万科集团是国内领先的城乡建设与生活服务商，主营业务包括房地产开发和物业服务，目前聚焦全国经济最具活力的三大经济圈及中西部重点城市。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="width-1220 khal-7">
+                    <div class="khal-5">
+                        <div class="text">
+                            <h2 class="wow fadeInUpa"></h2>
+                            <p class="wow fadeInUpa delay-2">商汤科技赋能万科集团总部办公以及旗下智慧社区生活，采用了SenseID 人证核验一体机、SesneKeeper 人脸识别闸机、SensePass 人脸识别门禁机等终端智能设备，完成访客迎宾、刷脸闸机、刷脸门禁考勤等服务。有效防止遗失 IC 门禁卡丢失后临极大的安全风险；杜绝了代打卡签到现象，帮助万科智慧办公及智慧社区打造完整得“一脸通”通行方案。</p>
+                        </div>
+                        <div class="img"><img src="../../assets/image/case/5d147a9145ea3.jpg"></div>
+                    </div>																																	 
+                </div>
+            </div>
+            <!-- 2 -->
+            <div class="swiper-slide">
+                <div class="khal-3 a-background" style="background-image: url('../../assets/image/case/5d147c7be2712.jpg');">
+                    <div class="width-1220 khal-8">
+                        <div class="khal-4">
+                            <!--notempty name="xo.pic2"><img src="/上海西岸" class="khal-img" /></notempty-->
+                            <p class="delay-2">2018 WAIC</p>
+                            <p class="delay-2 case_info"> 2018 世界人工智能大会是由国家发展改革委、科技部、工业和信息化部、国家网信办、中国科学院、中国工程院和上海市人民政府共同主办， 2018年9月17至19日在上海举办。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="width-1220 khal-7">
+                    <div class="khal-5">
+                        <div class="text">
+                            <h2 class="wow fadeInUpa"></h2>
+                            <p class="wow fadeInUpa delay-2">2018年世界人工智能大会，商汤科技利用原创全球领先的人脸识别技术，为用户提供快速精准的考勤签到服务，在大会现场支持了近2万名报名观众的人脸签到工作。SenseHello智能前台同时支持离线识别，断点续传等，使会议的核验签到效率大大提高。</p>
+                        </div>
+                        <div class="img"><img src="../../assets/image/case/5d147c8448be5.jpg"></div>
+                    </div>																																	 
+                </div>
+            </div>
+            <!-- 3 -->
+            <div class="swiper-slide">
+                <div class="khal-3 a-background" style="background-image: url('../../assets/image/case/5d147d8a2deb9.jpg');">
+                    <div class="width-1220 khal-8">
+                        <div class="khal-4">
+                            <!--notempty name="xo.pic2"><img src="/上海西岸" class="khal-img" /></notempty-->
+                            <p class="delay-2">世茂集团</p>
+                            <p class="delay-2 case_info">世茂集团是一家国际化、综合性的大型投资集团，其业务涵盖地产、酒店、商业、主题娱乐、物业、金融、教育、文化、健康、高科技等领域，形成了多元化业务并举的"可持续发展生态圈"。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="width-1220 khal-7">
+                    <div class="khal-5">
+                        <div class="text">
+                            <h2 class="wow fadeInUpa"></h2>
+                            <p class="wow fadeInUpa delay-2">商汤科技作为合作伙伴，赋能世茂集团，以“智慧办公”理念打造“便捷、舒适、发展”的智慧商务环境。商汤科技采用了SenseID 人证核验一体机、SesneKeeper 人脸识别闸机、SenseHello 智能前台等终端智能设备，从前台访客迎宾、刷脸闸机、刷脸控梯，办公室刷脸门禁等，帮助世茂集团打造完整得“一脸通”的智慧办公通行方案。</p>
+                        </div>
+                        <div class="img"><img src="../../assets/image/case/5d147d91bf828.jpg"></div>
+                    </div>																																	 
+                </div>
+            </div>
+            <!-- 4 -->
+            <div class="swiper-slide">
+                <div class="khal-3 a-background" style="background-image: url('../../assets/image/case/5d147e0d52eb4.jpg');">
+                    <div class="width-1220 khal-8">
+                        <div class="khal-4">
+                            <!--notempty name="xo.pic2"><img src="/上海西岸" class="khal-img" /></notempty-->
+                            <p class="delay-2">中国移动营业厅</p>
+                            <p class="delay-2 case_info">中国移动目前是全球网络规模最大、客户数量最多、盈利能力和品牌价值领先、市值排名位居前列的电信运营企业。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="width-1220 khal-7">
+                    <div class="khal-5">
+                        <div class="text">
+                            <h2 class="wow fadeInUpa"></h2>
+                            <p class="wow fadeInUpa delay-2">2016 年至今，商汤科技 SenseID 身份验证一体机帮助中国移动全国线下营业厅业务办理实名验证服务。</p>
+                        </div>
+                        <div class="img"><img src="../../assets/image/case/5d147e0f15996.jpg"></div>
+                    </div>																																	 
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
-
-  <!--助力场景-->
-  <div class="cp-title" style="background: #281ba2;">助力场景</div>
-  <div class="cp-1">
-    <div class="cp-bg a-background" style="background-image: url(../../assets/image/service/Security_SenseFoundry2.jpg);"></div>
-    <div class="cp-text width-1220 cp-text2 cp-text4">
-      <div class="cp-text1">
-        <h2 class="cp-text-h2 wow fadeInUpa">重点人员黑名单布控</h2>
-      </div>
-    </div>
-  </div>
-  <div class="cp-1">
-    <div class="cp-bg a-background" style="background-image: url(../../assets/image/service/Security_SenseFoundry3.jpg);"></div>
-    <div class="cp-text width-1220 cp-text2 cp-text4">
-      <div class="cp-text1">
-        <h2 class="cp-text-h2 wow fadeInUpa">城市活动人员轨迹还原</h2>
-      </div>
-    </div>
-  </div>
 
 </section>
 
@@ -764,43 +721,50 @@
 
 
 <!-- Initialize Swiper -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23257197-2"></script>
     <script>
       $(function(){     
         // 顶部导航
         $(".navbar-nav>li>a").addClass("ah")
         $(".logo1").attr("src","../../assets/image/index/logo.png");
 
-        // 二级swiper导航
-        var nrNavJia = new Swiper('#nr-nav-jia', {
-          slidesPerView :$(window).innerWidth()>768?7:'auto',
-          slidesPerGroup :7,
-        });
-        
-        // 产品展开收起列表
-        $("#cplb").click(function(){
-          if($(this).hasClass("hover")){
-            $(this).html('收起产品列表');
-            $(this).removeClass("hover");
-            $('#cplb-con').slideDown();
-          }else{
-            $(this).html('展开产品列表');
-            $(this).addClass("hover");
-            $('#cplb-con').slideUp();
-          }
-        })
+        //二级导航下拉
+            //一级
+            $('.khal-nr-nav').click(function(){
+              event.stopPropagation();
+              if($(this).hasClass('active')){
+                $('.hxjs-nav3').slideUp();
+                $(this).removeClass('active')
+              }else{
+                $('.hxjs-nav3').slideDown()
+                $(this).addClass('active')
+              }
+            });
+            //二级
+            $('.khal-nr-nav-box>.khal-nav-menu').click(function(){
+              event.stopPropagation();
+              if($(this).hasClass('active')){
+                $(this).next('.khal-nr-nav-box2').slideUp();
+                $(this).removeClass('active')
+              }else{
+                $(this).next('.khal-nr-nav-box2').slideDown()
+                $(this).addClass('active')
+              }
+            })
+            //点击空白处菜单收回
+            $('body').on('click',function(){
+              $('.khal-nr-nav').removeClass('active');
+              $('.hxjs-nav3').slideUp();
+            })
+
+
         //二级导航
         var headerHeight=$('header').outerHeight();
         var nrnavHeight=$('#nrnav-box').outerHeight();
         var nrnavTop=$("#nrnav-box").offset().top;//获得上部高度
-        // console.log(headerHeight);
-        // console.log(nrnavHeight);
-        // console.log('nrnavTop'+nrnavTop)
-        var nav1=Math.floor($("#nr-nav-con").find('.cp-title').eq(0).offset().top - headerHeight - nrnavHeight);
-        var nav2=Math.floor($("#nr-nav-con").find('.cp-title').eq(1).offset().top - headerHeight - nrnavHeight);
-        var nav3=Math.floor($("#nr-nav-con").find('.cp-title').eq(2).offset().top - headerHeight - nrnavHeight);
-        // console.log(nav1);
-        // console.log(nav2);
-        // console.log(nav3);
+        console.log(headerHeight);
+        console.log(nrnavHeight);
+        console.log('nrnavTop'+nrnavTop)
 
         $(window).scroll(function(){
           // 固定二级导航
@@ -815,29 +779,59 @@
             $("#nrnav-box").css('top',0);
             $("#nrnav-box-height").height(0);
           }
-          // 二级导航a标签伪类样式控制
-          if($(window).scrollTop()<nav2){
-            $("#nr-nav>li>a").removeClass('hover');
-            $("#nr-nav>li>a").eq(0).addClass('hover');
-          }else if($(window).scrollTop()>=nav2 && $(window).scrollTop()<nav3){
-            $("#nr-nav>li>a").removeClass('hover');
-            $("#nr-nav>li>a").eq(1).addClass('hover');
-          }else{
-            $("#nr-nav>li>a").removeClass('hover');
-            $("#nr-nav>li>a").eq(2).addClass('hover');
-          }
-        })
+        });
+        //轮播图
+        var hxjsMenu = new Swiper('#khal-menubox', {
+        slideToClickedSlide:true,//设置为true则点击slide会过渡到这个slide。
+        prevButton:'.swiper-button-prev',
+        nextButton:'.swiper-button-next',
+        slidesPerView : 5,
+        slidesPerGroup :5,
+        //slidesPerView : 1,
+        //slidesPerGroup : 1,
+        breakpoints: {
+            //当宽度小于等于768
+            768: {
+            slidesPerView: 4,
+            slidesPerGroup :4,
+            freeMode : true,
+            }
+        },
+        });
+        var hxjsCon = new Swiper('#khal', {
+        noSwiping : $(window).innerWidth()>768?true:false,
+        noSwipingClass : 'swiper-slide',
+        pagination : '.hxjs-page',
+        paginationType : 'fraction',
+        prevButton:'.hxjs-prev',
+        nextButton:'.hxjs-next',
+        autoHeight: true, //高度随内容变化
+        onSlideChangeStart: function(swiper){
+            hxjsMenu.slideTo(swiper.activeIndex, 500, false);
+            $('#khal-menubox').find('.swiper-slide').removeClass('hover');
+            $('#khal-menubox').find('.swiper-slide').eq(swiper.activeIndex).addClass('hover');
 
-        // 二级导航a标签点击跳转事件
-        var roll;
-        $("#nr-nav>li>a").each(function(i){
-          $(this).click(function(){
-            roll = Math.floor($("#nr-nav-con").find(".cp-title").eq(i).offset().top - nrnavHeight);
-            $('html,body').animate({scrollTop: roll});
-            console.log(roll);
-            return false;
-          })
+        },
+        onSlideChangeEnd: function(swiper){
+            $('#khal').find('.swiper-slide').find('.wo').removeClass('zhixing');
+            $('#khal').find('.swiper-slide').eq(swiper.activeIndex).find('.wo').addClass('zhixing');
+        },
+        });
+        $('#khal-menubox').find('.swiper-slide').each(function(i){
+        $(this).click(function(){
+            $('#khal-menubox').find('.swiper-slide').removeClass('hover');
+            $(this).addClass('hover');
+            hxjsMenu.slideTo(i, 500, true);
+            hxjsCon.slideTo(i, 500, true);
         })
+        });
+
+        //  ???????????
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-143749905-1');
+
       })
     </script>
   </body>
