@@ -553,17 +553,7 @@ border-radius: 1.2em;padding-left:.5rem;padding-right:1.6rem ;}
 
 
 /*footer*/
-/*.footer-1 {
-    padding: 50px 0;justify-content: flex-start;margin: 92px 0 0;
-}
-footer{padding: 0 .5rem;font-size:.44rem;}
-.footer-ba span{display: block;padding: 0;text-align: left;font-size:.4rem;}
-.footer-2{padding:0;position: absolute;bottom:76%;left: 0;width: 100%;}
-.footer-2>a{color: #707070;padding: 0 .42rem 0 0;font-size:.44rem;line-height:1.2rem; }
-.footer-3{padding: 0;}
-.footer-3>span.pull-right{float: none !important;padding-left: 3.8em;display: block;}
-.footer-logo{height: 1rem;}
-.footer-5,.footer-6{width: 1rem; height: 1rem;}*/
+
 footer{padding: 0 .5rem;font-size: .48rem;}
 .footer-ba span{display: block;padding: 0;text-align: left;}
 .footer-2{padding: 0;background: none;border-top: 1px solid #2e2e2f;border-bottom: 1px solid #2e2e2f;border-radius: 0;
@@ -615,7 +605,11 @@ background-image: url(../images/sj.png); }
 
 
 /*å†…é¡µbanner*/
-.nr-banner{height: 0;padding-bottom:70.667%;}
+/* .nr-banner{height: 0;padding-bottom:70.667%;} */
+.nr-banner{
+  height: 200px;
+  padding-bottom: 0px;
+}
 .nr-banner>.width-1220{position: absolute;padding:10px 10%}
 
 .nr-nav{height: auto;line-height: 2.5;}

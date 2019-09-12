@@ -531,7 +531,7 @@
           <a href="#">    
             <div class="slidebg"  style="background-image: url(./assets/image/index/banner4_bg_ch.jpg)">                  
               <div class="bgtext">
-                <img src="./assets/image/index/play-btn.png">
+                <img src="./assets/image/index/play-btn.png" style="width: 50px; height:50px;">
               </div>  
             </div>
             <div class="videos">
@@ -547,8 +547,8 @@
       <!-- Add Pagination -->
       <div class="swiper-pagination"></div>
       <!-- Add Arrows -->
-      <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next hidden-xs"></div>
+      <div class="swiper-button-prev hidden-xs"></div>
     </div>
   </div>
 
@@ -986,8 +986,8 @@
 
 
       var indexCp = new Swiper('#area-bannerlist', {//领域area-bannerlist轮播
-          // prevButton:'.ms-prev',
-          // nextButton:'.ms-next',
+          prevButton:'.ms-prev',
+          nextButton:'.ms-next',
           slidesPerView : 8,
           slidesPerGroup : 8,
           breakpoints: {
@@ -1001,7 +1001,6 @@
         });
         var indexCpNr = new Swiper('#area-banner', {//领域area-banner轮播
            simulateTouch :false,
-
             effect : 'fade',
         });
 
@@ -1014,15 +1013,16 @@
               })
           });
         var ii= $(window).innerWidth()>768?10:3;
+        console.log(ii);
         var a;
-              // $('#ms-prev').click(function(){
-              //     a = indexCp.activeIndex;
-              //     indexCp.slideTo(a-ii, 500, true);
-              // })
-              // $('#ms-next').click(function(){
-              //     a = indexCp.activeIndex;
-              //     indexCp.slideTo(a+ii, 500, true);
-              // })
+        $('#ms-prev').click(function(){
+            a = indexCp.activeIndex;
+            indexCp.slideTo(a-ii, 500, true);
+        })
+        $('#ms-next').click(function(){
+            a = indexCp.activeIndex;
+            indexCp.slideTo(a+ii, 500, true);
+        })
 
 
         var indexai = new Swiper('#case-banner', {//case轮播

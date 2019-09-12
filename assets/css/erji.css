@@ -811,7 +811,10 @@ display: flex;justify-content: center;flex-direction: column;padding: .5rem 1.4r
 	.cp-11,.xshz-6{flex-direction: column-reverse;}
 	.m-close{right: .05rem;top:.05rem}
 	.khal-8{position: absolute;}
-	.khal-3{height: 0;/*padding-bottom: 66%;*/padding-bottom: 108%;}
+  /* .khal-3{height: 0px;padding-bottom: 66%;padding-bottom: 108%;} */
+  	.khal-3{
+      height: 250px;
+    }
 	.khal-7{padding: 1.6rem 9.3% 0;}
 	.khal-5{flex-wrap: wrap;padding: 0 0 1.6rem;font-size: .5rem;line-height: 1.825;}
 	.khal-5>.img{width: 100%;margin-top:1.2rem;}
@@ -857,7 +860,11 @@ display: flex;justify-content: center;flex-direction: column;padding: .5rem 1.4r
 	.gyst-stwh1 img{position: relative;}
 
 
-
+  .cp-4 .swiper-button-next,
+  .cp-4 .swiper-button-prev{
+    width: 8px;
+    height: 20px;
+  }
 
 	.sytk{padding: 1rem .7rem;font-size: .48rem;line-height: 2;}
 	.sytk-1>h3{font-size: .56rem;}
@@ -1023,7 +1030,12 @@ display: flex;justify-content: center;flex-direction: column;padding: .5rem 1.4r
     width: 100%;
     height:49px;
   }
-
+  .khal-nr-nav{
+    font-size: 16px;
+  }
+  .nr-banner p{
+    line-height: 2;
+  }
 
   /*2019-2-22新增智慧城市下二级导航*/
  .nr-nav-jia{font-size: 13px;padding-left:0;padding-right: 0;}
